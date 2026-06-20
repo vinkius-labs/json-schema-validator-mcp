@@ -64,7 +64,7 @@ This project is fully open-source and built on top of [MCP Fusion](https://www.n
 3. **Deploying to Edge Production**
    If you wish to deploy your own instance to the Vinkius Edge infrastructure, authenticate via the CLI and run:
    ```bash
-   npm run deploy
+   npx mcpfusion deploy
    ```
    *Under the hood, this utilizes `mcpfusion deploy` to compile, package, and distribute your server to edge nodes globally.*
 
