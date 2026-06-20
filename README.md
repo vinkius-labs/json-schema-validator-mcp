@@ -4,7 +4,8 @@ An authoritative, edge-native Model Context Protocol (MCP) server that empowers 
 
 Developed and maintained by the Vinkius engineering team, this tool bridges the gap between probabilistic AI generation and strict, mathematical data compliance.
 
-[![Deploy on Vinkius Cloud](https://img.shields.io/badge/Deploy%20on-Vinkius%20Cloud-blue?style=for-the-badge)](https://vinkius.com/mcp/json-schema-validator)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/json-schema-validator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/json-schema-validator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/json-schema-validator-mcp)
 [![MCP Fusion Compatible](https://img.shields.io/badge/MCP%20Fusion-Strict%20Mode-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Why AI Fails at Schema Validation (And How We Solve It)
@@ -30,43 +31,35 @@ This MCP exposes a highly optimized tool specifically designed for agentic workf
 
 ---
 
-## Instant Access via Vinkius Cloud
+## Instant Access via Vinkius Edge
 
-If you need to equip your AI agents with strict JSON validation capabilities immediately, you don't need to configure infrastructure. We host a highly available, globally distributed instance of this server on **Vinkius Cloud**.
+If you need to equip your AI agents with strict JSON validation capabilities immediately, you don't need to configure infrastructure. We host a highly available, globally distributed instance of this server on **Vinkius Edge**.
 
 👉 **[Connect the JSON Schema Validator to your AI via Vinkius](https://vinkius.com/mcp/json-schema-validator)**
 
-Vinkius Cloud is an enterprise-grade MCP execution environment. Servers run in V8 isolate sandboxes at the edge, guaranteeing sub-40ms cold starts, native DLP (Data Loss Prevention) redaction, and maximum security for your agentic data workflows.
+Vinkius Edge is an enterprise-grade MCP execution environment. Servers run in V8 isolate sandboxes at the edge, guaranteeing sub-40ms cold starts, native DLP (Data Loss Prevention) redaction, and maximum security for your agentic data workflows.
 
 ---
 
-## Local Development & Deployment
+## Open-Source Development & Deployment
 
 This project is fully open-source and built on top of [MCP Fusion](https://www.npmjs.com/package/@mcpfusion/core), our framework for developing highly secure, typesafe MCP servers.
 
-### Prerequisites
-- Node.js 20 or higher
-- An MCP-compatible client (such as Claude Desktop or a custom LangChain/Vinkius agent)
+### 1. Free Edge Hosting (Recommended)
+You do not need to host this infrastructure yourself! **Vinkius provides FREE, highly available edge hosting for MCP servers.** You can deploy this exact server to our secure V8 isolate cloud in seconds:
+```bash
+npx mcpfusion deploy
+```
+*This command bundles your code and instantly deploys it to the Vinkius Edge, providing you with a live, DDoS-protected URL ready to be consumed by your AI agents globally.*
 
-### Getting Started
-
-1. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-
-2. **Run the Development Server**
-   ```bash
-   npm run dev
-   ```
-   *This starts the server locally on stdio, ready to be attached to your MCP client.*
-
-3. **Deploying to Edge Production**
-   If you wish to deploy your own instance to the Vinkius Edge infrastructure, authenticate via the CLI and run:
-   ```bash
-   npx mcpfusion deploy
-   ```
-   *Under the hood, this utilizes `mcpfusion deploy` to compile, package, and distribute your server to edge nodes globally.*
+### 2. Local Development
+If you prefer to run and test this MCP server locally on your own machine:
+```bash
+npm install
+npm run build
+npm run dev
+```
+*This starts the server locally on stdio, ready to be attached to your MCP client.*
 
 ## Security & Trust
 

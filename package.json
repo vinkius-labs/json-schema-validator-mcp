@@ -1,5 +1,5 @@
 {
-  "name": "@mcp-originals/json-schema-validator",
+  "name": "@mcp-listing/json-schema-validator-mcp",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/server.js",
@@ -20,5 +20,22 @@
     "tsx": "^4.7.0",
     "typescript": "^5.3.0",
     "vitest": "^1.5.0"
+  },
+  "description": "Deterministic JSON Schema validation Model Context Protocol (MCP) server. Strictly validate JSON payloads against defined schemas.",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "json",
+    "json-schema",
+    "validation",
+    "ajv",
+    "developer-tools",
+    "vinkius"
+  ],
+  "homepage": "https://vinkius.com/mcp/json-schema-validator",
+  "author": "Vinkius",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinkius-labs/json-schema-validator-mcp.git"
   }
 }
