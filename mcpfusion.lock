@@ -1,0 +1,46 @@
+{
+  "capabilities": {
+    "tools": {
+      "validate_json_schema": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [],
+          "systemRulesFingerprint": "static:2e7ab50df007c689352b229193554d3cb8b40d7b6bc005bbf17c2cbefe046837"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:95a92e259f63fc24721dc7793be5b726d27269bc7d5a110e71bb8a25ea4eb96a",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Use this tool to validate a JSON payload against a JSON Schema. Pass both as JSON strings. The engine returns whether the data is valid and lists all specific validation errors found.\n\nValidates a JSON string optionally against a JSON Schema.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Use this tool to validate a JSON payload against a JSON Schema. Pass both as JSON strings. The engine returns whether the data is valid and lists all specific validation errors found.\n\nValidates a JSON string optionally against a JSON Schema.. Requires: jsonStr",
+          "inputSchemaDigest": "sha256:db67105188b2f514711030fe4c20c7db6a9e8289647b917c136e9b06d2e92a74",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      }
+    }
+  },
+  "generatedAt": "2026-06-20T05:47:16.921Z",
+  "integrityDigest": "sha256:ebc9ee3966e54ad0205ac9746c394674a988f91a716b6c046c7e49216aa66852",
+  "lockfileVersion": 1,
+  "mcpfusionVersion": "4.3.0",
+  "serverName": "mcpfusion-server"
+}
